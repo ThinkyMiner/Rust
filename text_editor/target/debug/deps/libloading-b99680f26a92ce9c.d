@@ -1,0 +1,12 @@
+/Users/kartik/Desktop/Rust/text_editor/target/debug/deps/liblibloading-b99680f26a92ce9c.rmeta: /Users/kartik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.8.1/src/lib.rs /Users/kartik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.8.1/src/changelog.rs /Users/kartik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.8.1/src/os/mod.rs /Users/kartik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.8.1/src/os/unix/mod.rs /Users/kartik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.8.1/src/os/unix/consts.rs /Users/kartik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.8.1/src/util.rs /Users/kartik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.8.1/src/error.rs /Users/kartik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.8.1/src/safe.rs
+
+/Users/kartik/Desktop/Rust/text_editor/target/debug/deps/libloading-b99680f26a92ce9c.d: /Users/kartik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.8.1/src/lib.rs /Users/kartik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.8.1/src/changelog.rs /Users/kartik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.8.1/src/os/mod.rs /Users/kartik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.8.1/src/os/unix/mod.rs /Users/kartik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.8.1/src/os/unix/consts.rs /Users/kartik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.8.1/src/util.rs /Users/kartik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.8.1/src/error.rs /Users/kartik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.8.1/src/safe.rs
+
+/Users/kartik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.8.1/src/lib.rs:
+/Users/kartik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.8.1/src/changelog.rs:
+/Users/kartik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.8.1/src/os/mod.rs:
+/Users/kartik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.8.1/src/os/unix/mod.rs:
+/Users/kartik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.8.1/src/os/unix/consts.rs:
+/Users/kartik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.8.1/src/util.rs:
+/Users/kartik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.8.1/src/error.rs:
+/Users/kartik/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.8.1/src/safe.rs:
