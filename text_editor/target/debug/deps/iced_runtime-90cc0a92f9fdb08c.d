@@ -1,0 +1,26 @@
+/Users/kartik/Desktop/Rust/text_editor/target/debug/deps/libiced_runtime-90cc0a92f9fdb08c.rmeta: /Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/lib.rs /Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/clipboard.rs /Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/command.rs /Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/command/action.rs /Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/font.rs /Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/keyboard.rs /Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/overlay.rs /Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/overlay/nested.rs /Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/program.rs /Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/program/state.rs /Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/system.rs /Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/system/action.rs /Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/system/information.rs /Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/user_interface.rs /Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/window.rs /Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/window/action.rs /Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/window/screenshot.rs /Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/debug/basic.rs
+
+/Users/kartik/Desktop/Rust/text_editor/target/debug/deps/iced_runtime-90cc0a92f9fdb08c.d: /Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/lib.rs /Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/clipboard.rs /Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/command.rs /Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/command/action.rs /Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/font.rs /Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/keyboard.rs /Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/overlay.rs /Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/overlay/nested.rs /Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/program.rs /Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/program/state.rs /Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/system.rs /Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/system/action.rs /Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/system/information.rs /Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/user_interface.rs /Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/window.rs /Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/window/action.rs /Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/window/screenshot.rs /Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/debug/basic.rs
+
+/Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/lib.rs:
+/Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/clipboard.rs:
+/Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/command.rs:
+/Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/command/action.rs:
+/Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/font.rs:
+/Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/keyboard.rs:
+/Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/overlay.rs:
+/Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/overlay/nested.rs:
+/Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/program.rs:
+/Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/program/state.rs:
+/Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/system.rs:
+/Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/system/action.rs:
+/Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/system/information.rs:
+/Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/user_interface.rs:
+/Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/window.rs:
+/Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/window/action.rs:
+/Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/window/screenshot.rs:
+/Users/kartik/.cargo/git/checkouts/iced-f01cba4d5e61fd0a/3a025b0/runtime/src/debug/basic.rs:
+
+# env-dep:CARGO_PKG_NAME=iced_runtime
+# env-dep:CARGO_PKG_REPOSITORY=https://github.com/iced-rs/iced
+# env-dep:CARGO_PKG_VERSION=0.12.0
