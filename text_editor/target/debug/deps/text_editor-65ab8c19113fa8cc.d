@@ -3,3 +3,5 @@
 /Users/kartik/Desktop/Rust/text_editor/target/debug/deps/text_editor-65ab8c19113fa8cc.d: src/main.rs
 
 src/main.rs:
+
+# env-dep:CARGO_MANIFEST_DIR=/Users/kartik/Desktop/Rust/text_editor
