@@ -87,9 +87,10 @@ impl Application for Editor{
 
     fn view(&self) -> iced::Element<'_, Message> {
         let controls = row![
+            button("New").on_press(Message::New),
             button("Save").on_press(Message::Save), 
-            button("New").on_press(Message::New), 
-            button("Open").on_press(Message::Open)];
+            button("Open").on_press(Message::Open)
+            ].spacing(5);
 
         let input = text_editor(&self.content).on_edit(Message::Edit);
 
@@ -116,7 +117,7 @@ impl Application for Editor{
 
     }
     fn theme(&self) -> Theme{
-        Theme::Dark
+        Theme::Light
     }
 }
 
