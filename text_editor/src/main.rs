@@ -1,23 +1,26 @@
 use std::{sync::Arc, io};
 use std::path::{Path, PathBuf};
-use iced::widget::Column;
-use iced::{Font, Theme, widget::{button, container, text}, Application, widget::{text_editor, row, horizontal_space}, Settings, Length, Command};
-use iced::{executor, Element};
-
+use iced::widget::{Column, tooltip};
+use iced::{Font, Theme, widget::{pick_list, button, container, text}, Application, widget::{text_editor, row, horizontal_space}, Settings, Length, Command};
+use iced::{executor, Element, theme, Subscription, keyboard};
+use iced::highlighter::{self, Highlighter};
 
 fn main() -> iced::Result{
     Editor::run(Settings{
+        default_font: Font::MONOSPACE,
         fonts: vec![include_bytes!("../rust-editor.ttf").as_slice().into()],
         ..Settings::default()
     })
 }
-
+// hope this make me learn moressdssss
 struct Editor {
     path: Option<PathBuf>,
     content: text_editor::Content,
     error: Option<Error>,
+    theme:highlighter::Theme,
+    is_dirty:bool,
 }
-
+//Testing the ctrl + s 
 #[derive(Debug, Clone)]
 enum Message  {
     Edit(text_editor::Action),
@@ -25,9 +28,10 @@ enum Message  {
     New,
     Save,
     FileSaved(Result<PathBuf, Error>),
-    FileOpened(Result<(PathBuf, Arc<String>), Error>)
+    FileOpened(Result<(PathBuf, Arc<String>), Error>),
+    ThemeSelected(highlighter::Theme),
 }
-
+// Hello World saving this now
 impl Application for Editor{
     type Message = Message;
     type Theme = Theme; // Will in future use for the customo themes Put Cattputchin
@@ -41,6 +45,8 @@ impl Application for Editor{
             //content:text_editor::Content::with(include_str!("main.rs")),
             content:text_editor::Content::new(),
             error: None,
+            theme: highlighter:: Theme:: SolarizedDark,
+            is_dirty:true,
 
         }, Command::perform(load_file(default_file()),Message::FileOpened),)
     }
@@ -53,6 +59,7 @@ impl Application for Editor{
         match message{
             Message::Edit(action)=>{
                 //Applying the actions we intend to apply
+                self.is_dirty = self.is_dirty || action.is_edit();
                 self.error = None;
                 self.content.edit(action);
                 Command::none()
@@ -63,20 +70,25 @@ impl Application for Editor{
                 Command::perform(save_file(self.path.clone(), text), Message::FileSaved)
             }
             Message::FileSaved(Ok(path)) => {
+                self.is_dirty = false;
                 self.path = Some(path);
                 Command::none()
             }
             Message::FileSaved(Err(error))=>{
+                
                 self.error = Some(error);
                 Command::none()
             }
             Message::New=>{
                 self.path = None;
+                self.is_dirty = true;
                 self.content = text_editor::Content::new();
                 Command::none()
             }
             Message::FileOpened(Ok((path, content)))=>{
+                
                 self.path = Some(path);
+                self.is_dirty = false;
                 self.content = text_editor::Content::with(&content);
                 Command::none()
             }
@@ -84,18 +96,35 @@ impl Application for Editor{
                 self.error = Some(error);
                 Command::none()
             }
+            Message::ThemeSelected(theme) =>{
+                self.theme = theme;
+                Command::none()
+            }
         }
         
     }
 
+    fn subscription(&self) -> Subscription<Message> {
+        keyboard::on_key_press (|key_code, modifiers| match key_code{
+            keyboard::KeyCode::S if modifiers.command() => Some(Message::Save),
+            _ => None,
+        })
+    }
     fn view(&self) -> iced::Element<'_, Message> {
         let controls = row![
-            action(new_icon(), Message::New),
-            action(save_icon(), Message::Save), 
-            action(open_icon(), Message::Open)
+            action(new_icon(), "New File", Some(Message::New)),
+            action(save_icon(), "Save File", self.is_dirty.then_some(Message::Save)), 
+            action(open_icon(), "Open File", Some(Message::Open)),
+            horizontal_space(Length::Fill),
+            pick_list(highlighter::Theme::ALL, Some(self.theme), Message::ThemeSelected),
             ].spacing(5);
 
-        let input = text_editor(&self.content).on_edit(Message::Edit);
+        let input = text_editor(&self.content)
+            .on_edit(Message::Edit)
+            .highlight::<Highlighter>(highlighter::Settings{
+                theme: self.theme, 
+                extension: self
+                .path.as_ref().and_then(|path| path.extension()?.to_str()).unwrap_or("rs").to_string()}, |highlight, _theme| {highlight. to_format()});
 
         let bottom_bar = {
             
@@ -120,12 +149,19 @@ impl Application for Editor{
 
     }
     fn theme(&self) -> Theme{
-        Theme::Light
+        if self.theme.is_dark(){
+            Theme::Dark
+        }
+        else{
+            Theme::Light
+        }
+        
     }
 }
 
-fn action<'a>(content: Element<'a, Message>, on_press: Message) -> Element<'a, Message>{
-    button (container (content).width (30).center_x()). on_press(on_press).padding([5, 10]).into()
+fn action<'a>(content: Element<'a, Message>, label:&str, on_press: Option<Message> )-> Element<'a, Message>{
+    let is_disabled = on_press.is_none();
+    tooltip(button (container (content).width (30).center_x()).on_press_maybe(on_press).padding([5, 10]).style(if is_disabled{theme::Button::Secondary}else{theme::Button::Primary}), label, tooltip::Position::FollowCursor,).style(theme::Container::Box).into()
 }
 
 fn new_icon<'a, Message> ()-> Element<'a, Message>{
