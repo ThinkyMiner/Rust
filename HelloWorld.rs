@@ -1,5 +1,5 @@
 // RUST IS AN AHEAD OF TIME LANGUAGE
 
-fn main(){
-    println!("Hell World");
+fn main() {
+    println!("Hello World");
 }
